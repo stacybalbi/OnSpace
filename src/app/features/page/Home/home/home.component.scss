@@ -1,0 +1,160 @@
+ 
+ *{
+    font-family: "Arquitecta", sans-serif;
+
+ }
+
+ .waves-back {
+     width: 100%;
+     position: absolute;
+     padding-bottom: 178.218%;
+     height: 0px;
+     z-index: -10;
+
+ }
+
+ .frame-back {
+     width: 100%;
+     position: absolute;
+     left: 0px;
+     top: 0px;
+     overflow: hidden;
+     margin: -70px auto 0;
+     height: 100%;
+     z-index: -10;
+ }
+
+// Services
+
+
+.services {
+   align-items: flex-start;
+   display: flex;
+   min-height: 100%;
+   justify-content: center;
+   padding: 24px 24px;
+}
+
+.card-grid {
+   display: grid;
+   grid-template-columns: repeat(1, 1fr);
+   grid-column-gap: 24px;
+   grid-row-gap: 24px;
+   max-width: 1200px;
+   width: 100%;
+}
+
+@media (min-width: 540px) {
+   .card-grid {
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+@media (min-width: 960px) {
+   .card-grid {
+      grid-template-columns: repeat(4, 1fr);
+   }
+}
+
+.card-services {
+   list-style: none;
+   position: relative;
+}
+
+.card-services:before {
+   content: "";
+   display: block;
+   padding-bottom: 150%;
+   width: 100%;
+}
+
+.card__background {
+   background-size: cover;
+   background-position: center;
+   border-radius: 24px;
+   bottom: 0;
+   filter: brightness(0.75) saturate(1.2) contrast(0.85);
+   left: 0;
+   position: absolute;
+   right: 0;
+   top: 0;
+   transform-origin: center;
+   transform: scale(1) translateZ(0);
+   transition: filter 200ms linear, transform 200ms linear;
+}
+
+.card__content {
+   left: 0;
+   padding: 24px;
+   position: absolute;
+   top: 0;
+}
+
+.card__heading {
+   color: rgba(255, 255, 255, 0.9);
+   font-size: 1.9rem;
+   text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+   line-height: 1.4;
+   word-spacing: 100vw;
+}
+
+// Ours
+
+.ours{
+   background-color: #FCBD07;
+   border-radius: 24px;
+}
+
+//Contact
+
+form {
+   max-width: 420px;
+   margin: 50px auto;
+}
+
+.feedback-input {
+   color: white;
+   font-family: Helvetica, Arial, sans-serif;
+   font-weight: 500;
+   font-size: 18px;
+   border-radius: 5px;
+   line-height: 22px;
+   background-color: transparent;
+   border: 2px solid #FCBD07;
+   transition: all 0.3s;
+   padding: 13px;
+   margin-bottom: 15px;
+   width: 100%;
+   box-sizing: border-box;
+   outline: 0;
+}
+
+.feedback-input:focus {
+   border: 2px solid #1D95D3;
+}
+
+textarea {
+   height: 150px;
+   line-height: 150%;
+   resize: vertical;
+}
+
+[type="submit"] {
+   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+   width: 100%;
+   background: #FCBD07;
+   border-radius: 5px;
+   border: 0;
+   cursor: pointer;
+   color: white;
+   font-size: 24px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   transition: all 0.3s;
+   margin-top: -4px;
+   font-weight: 700;
+}
+
+[type="submit"]:hover {
+   background: #1D95D3;
+}

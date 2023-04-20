@@ -1,0 +1,26 @@
+ * {
+     font-family: "Arquitecta", sans-serif;
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ .waves {
+     width: 100%;
+     position: relative;
+     padding-bottom: 178.218%;
+     height: 0px;
+     z-index: 1;
+
+ }
+
+ .frame {
+     width: 100%;
+     position: absolute;
+     left: 0px;
+     top: 0px;
+     overflow: hidden;
+     margin: -30px auto 0;
+     height: 100%;
+     z-index: 1;
+ }
