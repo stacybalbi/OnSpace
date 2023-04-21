@@ -4,11 +4,15 @@
 
  }
 
+ h1{
+   font-size: 40px;
+ }
+
  //Waves
 
  .waves-back {
      width: 100%;
-     position: absolute;
+     position: fixed;
      padding-bottom: 178.218%;
      height: 0px;
      z-index: -10;
@@ -99,7 +103,7 @@
    grid-template-columns: repeat(1, 1fr);
    grid-column-gap: 24px;
    grid-row-gap: 24px;
-   max-width: 1200px;
+   max-width: 1100px;
    width: 100%;
 }
 
@@ -132,7 +136,7 @@
    background-position: center;
    border-radius: 24px;
    bottom: 0;
-   filter: brightness(0.75) saturate(1.2) contrast(0.85);
+   filter: brightness(0.60) saturate(1.2) contrast(0.85);
    left: 0;
    position: absolute;
    right: 0;
@@ -155,13 +159,29 @@
    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
    line-height: 1.4;
    word-spacing: 100vw;
+   
 }
 
 // Ours
 
 .ours{
    background-color: #FCBD07;
-   border-radius: 100px;
+   border-radius: 10px;
+}
+
+.text-ours{
+   font-size: 36px;
+   margin-left: 2%;
+   margin-right: 2%;
+
+   @media (max-width: 450px) {
+      flex-flow: column wrap;
+        font-size: 25px;
+         margin-left: 5%;
+         margin-right: 5%;
+
+      }
+
 }
 
 //Contact
@@ -169,11 +189,15 @@
 form {
    max-width: 420px;
    margin: 50px auto;
+
+   @media (max-width: 450px) {
+      flex-flow: column wrap;
+         max-width: 320px;  
+   } 
 }
 
 .feedback-input {
    color: black;
-   font-family: Helvetica, Arial, sans-serif;
    font-weight: 500;
    font-size: 18px;
    border-radius: 5px;
@@ -186,6 +210,8 @@ form {
    width: 100%;
    box-sizing: border-box;
    outline: 0;
+
+ 
 }
 
 .feedback-input:focus {
@@ -198,8 +224,8 @@ textarea {
    resize: vertical;
 }
 
+
 [type="submit"] {
-   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
    width: 100%;
    background: #FCBD07;
    border-radius: 5px;
