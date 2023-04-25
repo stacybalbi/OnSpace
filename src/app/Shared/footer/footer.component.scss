@@ -1,4 +1,94 @@
+ * {
+     font-family: "Arquitecta", sans-serif;
+
+ }
+
+ h1 {
+     font-size: 40px;
+ }
+
 .footer-section{
-    background-color: #FCBD07;
+    background-color: #E8E7E7;
     border-radius: 0px;
+}
+
+//Columns
+
+
+.wrapper-columns {
+    padding: 5px;
+    max-width: 960px;
+    width: 95%;
+    margin: 20px auto;
+}
+
+
+.columns {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+.column {
+    flex: 1;
+    margin: 50px;
+    padding: 10px;
+
+    &:first-child {
+        margin-left: 0;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+}
+
+
+@media screen and (max-width: 980px) {
+    .columns .column {
+        margin-bottom: 5px;
+        flex-basis: 40%;
+
+        &:nth-last-child(2) {
+            margin-right: 0;
+        }
+
+        &:last-child {
+            flex-basis: 100%;
+            margin: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .columns .column {
+        flex-basis: 100%;
+        margin: 0 0 5px 0;
+    }
+}
+
+//mini nav
+
+.mini-nav{
+    margin: 30% auto;
+    font-size: 25px;
+}
+
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: rgb(49, 37, 37);
+}
+
+//logo
+
+.max-logo{
+    margin: 30% auto;
+}
+
+img{
+
 }
