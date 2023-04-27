@@ -4,7 +4,9 @@
 
 export const environment = {
   production: false,
-  API : ''
+  API: 'https://yncmjyyzxjtksnecbawv.supabase.co',
+  APIKEY:
+    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InluY21qeXl6eGp0a3NuZWNiYXd2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODI2MjA3MzcsImV4cCI6MTk5ODE5NjczN30.oOarnxxxSe3APrY1Y__dyzHl2AA3wXGMlYFea3RFjEc',
 };
 
 /*
