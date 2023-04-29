@@ -12,10 +12,10 @@ export class PortafolioService {
   constructor() {}
 
   async getportafolios() {
-    let { data: portafolios, error } = await this.supabase
-      .from<Portafolio>('portafolio')
+    let { data: portafolio, error } = await this.supabase
+      .from<Portafolio, []>('portafolio')
       .select('*')
       .limit(10);
-    return { portafolios, error };
+    return { portafolio, error };
   }
 }
