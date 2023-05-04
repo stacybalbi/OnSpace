@@ -11,11 +11,11 @@ export class PortafolioService {
 
   constructor() {}
 
-  async getportafolios() {
-    let { data: portafolio, error } = await this.supabase
-      .from<Portafolio, []>('portafolio')
-      .select('*')
-      .limit(10);
-    return { portafolio, error };
-  }
+  // async getportafolios() {
+  //   let { data: portafolio, error } = await this.supabase
+  //     .from<Portafolio, []>('portafolio')
+  //     .select('*')
+  //     .limit(10);
+  //   return { portafolio, error };
+  // }
 }
