@@ -1,3 +1,10 @@
 div{
     z-index: 2;
 }
+
+.not-found{
+    @media (max-width: 450px) {
+            flex-flow: column wrap;
+    
+        }
+}
