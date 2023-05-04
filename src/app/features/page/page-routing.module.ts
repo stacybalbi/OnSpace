@@ -17,7 +17,12 @@ const routes: Routes = [
     path: 'contact-page',
     loadChildren: () =>
       import('./Contact/contact.module').then((m) => m.ContactModule),
-  }
+  },
+  {
+    path: 'form-page',
+    loadChildren: () =>
+      import('./Form/form.module').then((m) => m.FormModule),
+  },
 ];
 
 @NgModule({

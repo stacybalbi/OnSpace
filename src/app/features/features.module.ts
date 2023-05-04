@@ -7,9 +7,10 @@ import { PortafolioModule } from './page/Portafolio/portafolio.module';
 import { TeamModule } from './page/Team/team.module';
 import { ContactModule } from './page/Contact/contact.module';
 import { HttpClientModule } from '@angular/common/http';
+import { FormModule } from './page/Form/form.module';
 
 @NgModule({
   declarations: [],
-  imports: [CommonModule, FeaturesRoutingModule, HomeModule, PortafolioModule, TeamModule,ContactModule, HttpClientModule],
+  imports: [CommonModule, FeaturesRoutingModule, HomeModule, PortafolioModule, TeamModule,ContactModule, FormModule ,HttpClientModule],
 })
 export class FeaturesModule {}
