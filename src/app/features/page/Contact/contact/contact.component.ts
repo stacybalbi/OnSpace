@@ -1,6 +1,7 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-contact',
@@ -33,21 +34,27 @@ export class ContactComponent implements OnInit {
       }),
     };
 
+
+
     let data = `name=${name}&email=${email}&number=${number}&message=${message}`;
-    let errorMessage: string = '';
 
-    this.httpClient.post<any>(url, data, httpOptions).subscribe({
-      next: (data) => {
-        console.log('email sent' + JSON.stringify(data));
+    this.httpClient.post<any>(url, data, httpOptions).subscribe(
+      () => {
+        const Toast = Swal.fire({
+          position: 'center',
+          icon: 'success',
+          title: 'Datos enviados correctamente',
+          showConfirmButton: false,
+          timer: 1500,
+        });
       },
-      error: (error) => {
-        errorMessage = error.message;
-        console.log('error!', errorMessage);
-      },
-    });
-
-    //DEBUG
-    // console.log("url is ", url);
-    // console.log("data", name, email, message);
+      () => {
+        Swal.fire(
+          'Error',
+          'Datos Incorrectos, Volver a intentar',
+          'error'
+        );
+      }
+    );
   }
 }

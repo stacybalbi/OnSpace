@@ -129,14 +129,15 @@
 </section>
 <br><br>
 <section class="contact">
+    <br><br>
     <h1 class="text-center">Contacto</h1> <br>
 
-    <form>
-        <input name="name" type="text" class="feedback-input" placeholder="Name" />
-        <input name="email" type="text" class="feedback-input" placeholder="Email" />
-        <input name="number" type="text" class="feedback-input" placeholder="Phone Number" />
-        <textarea name="text" class="feedback-input" placeholder="Message"></textarea>
-        <input type="submit" value="SUBMIT" />
+    <form [formGroup]="ContactForm">
+        <input name="name" type="text" class="feedback-input" placeholder="Name" #name />
+        <input name="email" type="text" class="feedback-input" placeholder="Email" #email />
+        <input name="number" type="text" class="feedback-input" placeholder="Phone Number" #number />
+        <textarea name="message" type="text" class="feedback-input" placeholder="Message" #message></textarea>
+        <input type="submit" value="SUBMIT" (click)="sendEmail(name.value, email.value, number.value, message.value)" />
     </form>
 
 </section>
