@@ -22,7 +22,10 @@ export class ContactComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  sendEmail(name: String, email: String, number: String,message: String) {
+  sendEmail(name: String, 
+            email: String, 
+            number: String,
+            message: String) {
     //Set the url with your secretKey from formspree.io
     let url = 'https://formspree.io/f/' + this.secretKey;
 

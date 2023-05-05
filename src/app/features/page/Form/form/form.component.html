@@ -11,18 +11,19 @@
     <br><br>
     <h1 class="text-center">¡Vamos a expandir tu marca!</h1>
 
-    <form>
-        <input name="name" type="text" class="feedback-input" placeholder="Nombre Completo" />
-        <input name="City" type="text" class="feedback-input" placeholder="Ciudad" />
-        <input name="City" type="text" class="feedback-input" placeholder="País" />
-        <input name="email" type="text" class="feedback-input" placeholder="Email" />
-        <input name="number" type="text" class="feedback-input" placeholder="Teléfono" />
-        <input name="City" type="text" class="feedback-input" placeholder="Déjanos tu usuario de IG:" />
-        <textarea name="text" class="feedback-input" placeholder="¿Qué productos o servicios ofreces?"></textarea>
-        <textarea name="text" class="feedback-input" placeholder="¿Qué te gustaría mejorar de tu marca? (por ejemplo, diseño web, marketing digital, publicidad, branding, SEO, etc.)"></textarea>
-        <input name="City" type="text" class="feedback-input" placeholder="¿Cómo llegaste a nosotros? (Instagram, página web, buscador, publicidad)" />
-        <input name="City" type="text" class="feedback-input" placeholder="¿Cuál es tu presupesto?" />
-        <input type="submit" value="ENVIAR" />
+    <form [formGroup]="ServiceForm">
+        <input name="name" type="text" class="feedback-input" placeholder="Nombre Completo" #name/>
+        <input name="City" type="text" class="feedback-input" placeholder="Ciudad" #city/>
+        <input name="City" type="text" class="feedback-input" placeholder="País" #country/>
+        <input name="email" type="text" class="feedback-input" placeholder="Email" #email/>
+        <input name="number" type="text" class="feedback-input" placeholder="Teléfono" #number/>
+        <input name="City" type="text" class="feedback-input" placeholder="Déjanos tu usuario de IG:" #instagram/>
+        <textarea name="text" class="feedback-input" placeholder="¿Qué productos o servicios ofreces?" #service_offering></textarea>
+        <textarea name="text" class="feedback-input" placeholder="¿Qué te gustaría mejorar de tu marca? (por ejemplo, diseño web, marketing digital, publicidad, branding, SEO, etc.)" #improvements></textarea>
+        <input name="City" type="text" class="feedback-input" placeholder="¿Cómo llegaste a nosotros? (Instagram, página web, buscador, publicidad)" #arrival/>
+        <input name="City" type="text" class="feedback-input" placeholder="¿Cuál es tu presupesto?" #budget/>
+        <input type="submit" value="SUBMIT"
+            (click)="sendEmail(name.value,city.value, country.value, email.value, number.value, instagram.value,service_offering.value, improvements.value, arrival.value, budget.value)" />
     </form>
 
 </section>
