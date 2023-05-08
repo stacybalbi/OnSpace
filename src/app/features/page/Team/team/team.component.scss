@@ -5,26 +5,54 @@
      box-sizing: border-box;
  }
 
- .waves {
-     width: 100%;
-     position: relative;
-     padding-bottom: 178.218%;
-     height: 0px;
-     z-index: 1;
+//  .waves {
+//      width: 100%;
+//      position: relative;
+//      padding-bottom: 178.218%;
+//      height: 0px;
+//      z-index: 1;
 
- }
+//  }
 
- .frame {
-     width: 100%;
-     position: absolute;
-     left: 0px;
-     top: 0px;
-     overflow: hidden;
-     margin: -30px auto 0;
-     height: 100%;
-     z-index: 1;
- }
+//  .frame {
+//      width: 100%;
+//      position: absolute;
+//      left: 0px;
+//      top: 0px;
+//      overflow: hidden;
+//      margin: -30px auto 0;
+//      height: 100%;
+//      z-index: 1;
+//  }
 
- img{
-    margin-top: -4%;
- }
+//  img{
+//     margin-top: -4%;
+//  }
+
+.box{
+    
+}
+
+
+.waves {
+    
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-image: url('/./assets/img/wave.png');
+    background-size: 1000px 100px;
+    animation: wave 3s linear infinite;
+}
+
+
+
+@keyframes wave {
+    0% {
+        background-position: 0;
+    }
+
+    100% {
+        background-position: 1000px;
+    }
+}
