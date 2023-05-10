@@ -210,7 +210,7 @@
 
       &:last-child {
          flex-basis: 100%;
-         margin: 0;
+         margin: 20px;
       }
    }
 }
@@ -224,6 +224,9 @@
 
 // Services
 
+.services-section{
+   background-color: #E8E7E7;
+}
 
 .services {
    align-items: flex-start;
@@ -238,7 +241,7 @@
    grid-template-columns: repeat(1, 1fr);
    grid-column-gap: 24px;
    grid-row-gap: 24px;
-   max-width: 1100px;
+   max-width: 1000px;
    width: 100%;
 }
 
@@ -269,35 +272,15 @@
 .card__background {
    background-size: cover;
    background-position: center;
-   background-color: #FCBD07;
-   
    border-radius: 24px;
    bottom: 0;
-   filter: brightness(0.60) saturate(1.2) contrast(0.85);
    left: 0;
    position: absolute;
    right: 0;
    top: 0;
    transform-origin: center;
-   transform: scale(1) translateZ(0);
-   transition: filter 200ms linear, transform 200ms linear;
 }
 
-.card__content {
-   left: 0;
-   padding: 24px;
-   position: absolute;
-   top: 0;
-}
-
-.card__heading {
-   color: rgba(255, 255, 255, 0.9);
-   font-size: 1.9rem;
-   text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
-   line-height: 1.4;
-   word-spacing: 100vw;
-   
-}
 
 // Ours
 
