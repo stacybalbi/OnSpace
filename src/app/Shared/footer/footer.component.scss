@@ -8,7 +8,7 @@
  }
 
 .footer-section{
-    background-color: #E8E7E7;
+    background-color: #1D95D3;
     border-radius: 0px;
 }
 
@@ -80,7 +80,7 @@ a:link,
 a:visited,
 a:active {
     text-decoration: none;
-    color: rgb(49, 37, 37);
+    color: #E8E7E7;
 }
 
 //logo
@@ -90,6 +90,11 @@ a:active {
 }
 
 img{
-    width: 100%;
-    
+    width: 100%; 
+}
+
+.text{
+    font-size: 20px;
+    margin: auto;
+    color: #E8E7E7;
 }
