@@ -16,6 +16,7 @@
 
  img {
    width: 150%;
+
  }
 
  //Waves
@@ -59,6 +60,14 @@
    color: #E8E7E7;
    position: absolute;
    font-family: 'Arquitecta Black';
+
+   @media (max-width: 550px) {
+         flex-flow: column wrap;
+         line-height: 70px;
+         font-size: 35px;
+         justify-content: center;
+   
+      }
 }
 
 .text-box {
@@ -169,10 +178,21 @@
 
 .btn-form{
    border-radius: 25px;
+   border-color: #E8E7E7;
+   box-shadow: 10px 5px 5px #E8E7E7;
    background-color: #FCBD07;
    color: #1D95D3;
    font-weight: 900;
    justify-content: center;
+   position: relative;
+
+   @media (max-width: 550px) {
+         flex-flow: column wrap;
+         font-size: 45px;
+         justify-content: center;
+         margin-left: 50px;
+   
+      }
 }
 
 //Columns
@@ -253,11 +273,20 @@
    grid-row-gap: 24px;
    max-width: 1000px;
    width: 100%;
+
+   @media (max-width: 550px) {
+      flex-flow: column wrap;
+      max-width: 400px;
+      grid-template-columns: repeat(2, 1fr);
+
+   }
+
 }
 
 @media (min-width: 540px) {
    .card-grid {
       grid-template-columns: repeat(2, 1fr);
+      
    }
 }
 
@@ -266,6 +295,7 @@
       grid-template-columns: repeat(4, 1fr);
    }
 }
+
 
 .card-services {
    list-style: none;
