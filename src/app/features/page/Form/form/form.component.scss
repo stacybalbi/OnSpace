@@ -10,43 +10,12 @@
      font-size: 40px;
  }
 
- //Waves
-
- .waves-back {
-     width: 100%;
-     position: fixed;
-     padding-bottom: 178.218%;
-     height: 0px;
-     z-index: -10;
-
-     @media (max-width: 450px) {
-         flex-flow: column wrap;
-         margin-top: -20%;
-
-     }
-
- }
-
- .frame-back {
-     width: 100%;
-     position: absolute;
-     left: 0px;
-     top: 0px;
-     overflow: hidden;
-     margin: -70px auto 0;
-     height: 100%;
-     z-index: -10;
-
-     @media (max-width: 450px) {
-         flex-flow: column wrap;
-         margin-top: -20%;
-         width: 500px;
-         height: 1000px;
-
-     }
- }
 
  //Contact
+
+ .contact {
+     background-color: #E8E7E7;
+ }
 
  form {
      max-width: 420px;
