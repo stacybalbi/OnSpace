@@ -165,12 +165,22 @@
    }
 }
 
+//Button
+
+.btn-form{
+   border-radius: 25px;
+   background-color: #FCBD07;
+   color: #1D95D3;
+   font-weight: 900;
+   justify-content: center;
+}
+
 //Columns
 
 
 .wrapper-columns {
    padding: 5px;
-   max-width: 960px;
+   max-width: 1250px;
    width: 95%;
    margin: 20px auto;
 }
@@ -179,7 +189,7 @@
 .columns {
    display: flex;
    flex-flow: row wrap;
-   justify-content: center;
+   justify-content: space-between;
    margin: 5px 0;
 }
 
