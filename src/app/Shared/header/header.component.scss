@@ -2,14 +2,12 @@
     font-family: "Arquitecta", sans-serif;
 }
 
-
-nav{
+header{
     background-color: #1D95D3;
-    position: relative;
 }
 
 nav a {
-    line-height: 50px;
+    margin-bottom: 10px;
     font-size: 25px;
     display: inline-block;
     position: relative;
@@ -25,6 +23,8 @@ nav a {
             width: 90px;
             font-size: 23px;
         }
+
+
 }
 
 
