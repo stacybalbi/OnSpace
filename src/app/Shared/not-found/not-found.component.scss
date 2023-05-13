@@ -3,8 +3,13 @@ div{
 }
 
 .not-found{
+    
+
+    width: 50%;
+    height: 50%;
+    
     @media (max-width: 450px) {
             flex-flow: column wrap;
-    
+        width: 100%;
         }
 }
