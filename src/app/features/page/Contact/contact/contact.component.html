@@ -2,14 +2,48 @@
 
 <section class="contact">
     <br><br> <br> <br> <br>
-    <h1 class="text-center">Contacto</h1> <br>
 
-    <form [formGroup]="ContactForm">
-        <input name="name" type="text" class="feedback-input" placeholder="Name" #name/>
-        <input name="email" type="text" class="feedback-input" placeholder="Email" #email/>
-        <input name="number" type="number" class="feedback-input" placeholder="Phone Number" #number/>
-        <textarea name="message" type="text" class="feedback-input" placeholder="Message" #message></textarea>
-        <input type="submit" value="SUBMIT" (click)="sendEmail(name.value, email.value, number.value, message.value)"/>
-    </form>
+<div class="wrapper-columns">
+
+    <div class="columns text-center">
+
+        <div class="column">
+            <h1 class="text-center">Contacto</h1> <br>
+            
+            <form [formGroup]="ContactForm">
+                <input name="name" type="text" class="feedback-input" placeholder="Name" #name />
+                <input name="email" type="text" class="feedback-input" placeholder="Email" #email />
+                <input name="number" type="number" class="feedback-input" placeholder="Phone Number" #number />
+                <textarea name="message" type="text" class="feedback-input" placeholder="Message" #message></textarea>
+                <input type="submit" value="SUBMIT" (click)="sendEmail(name.value, email.value, number.value, message.value)" />
+            </form>
+
+        </div>
+        <div class="column">
+      <div class="caption"> <br>
+      ¿LISTO PA' <br />
+
+    <p class="text-box"> EXPANDIR </p>
+    TU MARCA?
+    <br />
+    <br />
+
+    <div class="text-center">
+        <button class="btn-form text-center" routerLink="/form">
+            <p class="text_button">¡Hagámoslo!</p>
+
+        </button>
+    </div>
+</div>
+            
+
+        </div>
+
+    
+
+    </div>
+
+</div>
+
 <br><br>
 </section>
