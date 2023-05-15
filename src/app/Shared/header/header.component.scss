@@ -7,16 +7,17 @@ header{
 }
 
 nav a {
+    width: 100px;
+    display: inline-block;
     margin-bottom: 10px;
     font-size: 25px;
-    display: inline-block;
     position: relative;
     z-index: 2;
     text-decoration: none;
     text-align: center;
     color: white;
+    transition: color .5s;
     cursor: pointer;
-    width: 100px;
 
     @media(max-width: 450px) {
             flex-flow: column wrap;
@@ -25,6 +26,14 @@ nav a {
         }
 
 
+}
+
+nav a:hover{
+    color: #fcbd07;
+}
+
+nav a:link{
+    color: #fcbd07;
 }
 
 
