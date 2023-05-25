@@ -317,8 +317,11 @@ img {
 // Ours
 
 .ours {
-  background-color: #fcbd07;
+  // background-color: #fcbd07;
+  background-image: url("/../assets/img/stars.jpg");
+    background-attachment: fixed;
   border-radius: 10px;
+  color:#E8E7E7;
 }
 
 .text-ours {
