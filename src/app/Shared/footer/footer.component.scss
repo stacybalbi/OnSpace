@@ -96,7 +96,6 @@ img{
 }
 
 .text{
-    margin: 10px;
     font-size: 30px;
     color: #E8E7E7;
 }
@@ -167,34 +166,34 @@ img{
 .wrapper .facebook:hover,
 .wrapper .facebook:hover .tooltip,
 .wrapper .facebook:hover .tooltip::before {
-    background: #1877F2;
+    background: #022655;
     color: #ffffff;
 }
 
 .wrapper .twitter:hover,
 .wrapper .twitter:hover .tooltip,
 .wrapper .twitter:hover .tooltip::before {
-    background: #1DA1F2;
+    background: #064a75;
     color: #ffffff;
 }
 
 .wrapper .instagram:hover,
 .wrapper .instagram:hover .tooltip,
 .wrapper .instagram:hover .tooltip::before {
-    background: #E4405F;
+    background: #7b0c20;
     color: #ffffff;
 }
 
 .wrapper .whatsapp:hover,
 .wrapper .whatsapp:hover .tooltip,
 .wrapper .whatsapp:hover .tooltip::before {
-    background: #25d366;
+    background: #0e7433;
     color: #ffffff;
 }
 
 .wrapper .tiktok:hover,
 .wrapper .tiktok:hover .tooltip,
 .wrapper .tiktok:hover .tooltip::before {
-    background: black;
+    background: rgb(68, 65, 65);
     color: #ffffff;
 }
