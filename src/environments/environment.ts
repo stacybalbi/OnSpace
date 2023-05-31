@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  API: 'https://yncmjyyzxjtksnecbawv.supabase.co',
+  API: 'https://localhost:44356/api/',
 };
 
 /*

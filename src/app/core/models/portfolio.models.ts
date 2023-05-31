@@ -7,4 +7,5 @@ export interface Portfolio extends BaseEntity {
   companyId: Company;
   name: string;
   cover_page: string;
+  description: string;
 }
