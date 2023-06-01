@@ -12,8 +12,7 @@ import { HomeComponent } from './home/home.component';
     CommonModule,
     HomeRoutingModule,
     FormsModule,
-    ReactiveFormsModule,
-    HttpClientModule
+    ReactiveFormsModule
   ]
 })
 export class HomeModule {}
