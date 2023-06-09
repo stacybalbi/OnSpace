@@ -8,7 +8,7 @@ import { PortfolioService } from 'src/app/services/Portfolio/portfolio.service';
   styleUrls: ['./portafolio.component.scss'],
 })
 export class PortafolioComponent implements OnInit {
-  portfolio: Portfolio[] = [];
+  portfolio!: Portfolio[];
 
   constructor(private portfolioService: PortfolioService) {}
 
@@ -19,6 +19,7 @@ export class PortafolioComponent implements OnInit {
   getportfolio() {
     this.portfolioService.list().subscribe((data: any) => {
       this.portfolio = data;
+      console.log(data);
     });
   }
 
