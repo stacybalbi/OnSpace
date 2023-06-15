@@ -36,7 +36,6 @@ import { HttpClient } from '@angular/common/http';
 import { Inject } from '@angular/core';
 import { environment } from 'src/environments/environment';
 import { BaseEntity } from '../core/models/BaseEntity.models';
-import { Response } from '../core/type/response.type';
 
 export class BaseService<T extends BaseEntity> {
   constructor(
@@ -46,10 +45,6 @@ export class BaseService<T extends BaseEntity> {
 
   list() {
     return this.http.get<T[]>(`${environment.API}${this.controller}`);
-  }
-
-  get() {
-    return this.http.get<Response<T[]>>(`${environment.API}${this.controller}`);
   }
 
   loadById(id: any) {
