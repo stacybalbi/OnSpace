@@ -3,8 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false,
-  API: 'https://localhost:44356/api/',
+  production: true,
+  API: 'https://onspaceagencyapi20230615143728.azurewebsites.net/api/',
 };
 
 /*
