@@ -138,6 +138,12 @@ textarea {
     font-weight: 1000;
     color: #1D95D3;
     font-family: "Arquitecta";
+    @media (max-width: 992px) {
+            flex-flow: column wrap;
+            line-height: 70px;
+            font-size: 45px;
+    
+        }
 
 }
 
@@ -176,6 +182,12 @@ textarea {
     font-size: 60px;
     margin: 2px 15px;
     font-weight: 700;
+
+    @media (max-width: 992px) {
+            flex-flow: column wrap;
+            font-size: 50px;
+    
+        }
 }
 
 .text_button:hover{

@@ -325,7 +325,7 @@ img {
 .ours {
   // background-color: #fcbd07;
   background-image: url('https://lh3.googleusercontent.com/drive-viewer/AFGJ81rYKOJkqvOGeeVdbBVwsE1tmCBcYQvIe6Vl9L6mtwqTAgBfYJY7eeFM2BfxdpAA59f4tbsyanwH0VBdjvjySC5744Vr=w1920-h929');
-    background-attachment: fixed;
+  background-attachment: fixed;
   border-radius: 10px;
   color:#E8E7E7;
 }
@@ -337,9 +337,9 @@ img {
 
   @media (max-width: 450px) {
     flex-flow: column wrap;
-    font-size: 25px;
-    margin-left: 5%;
-    margin-right: 5%;
+    font-size: 22px;
+    margin-left: 7%;
+    margin-right: 7%;
   }
 }
 
