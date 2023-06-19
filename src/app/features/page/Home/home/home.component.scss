@@ -120,6 +120,12 @@ img {
   font-size: 60px;
   margin:  2px 15px;
   font-weight: 700;
+
+  @media (max-width: 992px){
+    flex-flow: column wrap;
+    font-size: 50px;
+
+  }
 }
 
 //Text-animation
@@ -131,11 +137,11 @@ img {
   font-family: "Arquitecta";
 
   @media (max-width: 992px) {
-      //   flex-flow: column wrap;
-      //   line-height: 70px;
-      //   font-size: 35px;
-      //   justify-content: center;
-      //   margin: auto;
+        flex-flow: column wrap;
+        line-height: 70px;
+        font-size: 45px;
+        justify-content: center;
+        margin: auto;
 
      }
 }
@@ -318,7 +324,7 @@ img {
 
 .ours {
   // background-color: #fcbd07;
-  background-image: url("/../assets/img/stars.jpg");
+  background-image: url("https://lh3.googleusercontent.com/drive-viewer/AFGJ81rYKOJkqvOGeeVdbBVwsE1tmCBcYQvIe6Vl9L6mtwqTAgBfYJY7eeFM2BfxdpAA59f4tbsyanwH0VBdjvjySC5744Vr=w1920-h929");
     background-attachment: fixed;
   border-radius: 10px;
   color:#E8E7E7;
