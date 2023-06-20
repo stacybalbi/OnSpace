@@ -1,9 +1,16 @@
+@font-face {
+  font-family: "Arquitecta";
+  src: url('../../../../../assets/fonts/Arquitecta.otf') format("opentype");
+}
+
 * {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   font-family: "Arquitecta", sans-serif;
+  //  font-family: "Arquitecta", sans-serif;
 }
+
+
 
 h1 {
   font-size: 40px;
