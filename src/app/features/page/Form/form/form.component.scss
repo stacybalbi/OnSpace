@@ -1,5 +1,9 @@
+  @font-face {
+      font-family: "Arquitecta";
+      src: url('../../../../../assets/fonts/Arquitecta.otf');
+  }
  * {
-     font-family: "Arquitecta", sans-serif;
+     font-family: "Arquitecta";
      margin: 0;
      padding: 0;
      -webkit-box-sizing: border-box;
@@ -8,6 +12,12 @@
 
  h1 {
      font-size: 40px;
+
+    @media (max-width: 550px) {
+            flex-flow: column wrap;
+            font-size: 60px;
+            justify-content: center;
+        }
  }
 
 

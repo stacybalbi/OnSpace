@@ -1,19 +1,29 @@
 @font-face {
   font-family: "Arquitecta";
-  src: url('../../../../../assets/fonts/Arquitecta.otf') format("opentype");
+  src: url('../../../../../assets/fonts/Arquitecta.otf');
+}
+@font-face {
+  font-family: "Arquitecta Black";
+  src: url('../../../../../assets/fonts/ArquitectaBlack.otf');
+}
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url('../../../../../assets/fonts/Montserrat-Bold.ttf') format("truetype");
 }
 
 * {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-  //  font-family: "Arquitecta", sans-serif;
+   font-family: "Arquitecta";
 }
 
 
 
 h1 {
   font-size: 40px;
+
+  
 }
 
 //logo
@@ -137,11 +147,11 @@ img {
 
 //Text-animation
 .caption {
+  font-family: "Arquitecta Black";
   line-height: 80px;
   font-size: 60px;
-  font-weight: 1000;
+  font-weight: 800;
   color: #E8E7E7;
-  font-family: "Arquitecta";
 
   @media (max-width: 992px) {
         flex-flow: column wrap;
@@ -154,12 +164,12 @@ img {
 }
 
 .text-box {
+  font-family: "Montserrat Bold";
   display: flex;
   justify-content: center;
   position: relative;
   top: 70px;
-  font-weight: 1000;
-  font-family: "Montserrat";
+  font-weight: 800;
   color: #fcbd07;
 
  

@@ -1,5 +1,9 @@
+@font-face {
+    font-family: "Arquitecta";
+    src: url('/src/assets/fonts/Arquitecta.otf');
+}
 * {
-    font-family: "Arquitecta", sans-serif;
+    font-family: "Arquitecta";
 }
 
 header{
@@ -7,7 +11,7 @@ header{
 }
 
 nav a {
-    width: 110px;
+    width: 150px;
     display: inline-block;
     margin-bottom: 10px;
     font-size: 25px;
