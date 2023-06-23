@@ -19,7 +19,6 @@ export class PortafolioComponent implements OnInit {
   getportfolio() {
     this.portfolioService.list().subscribe((data: any) => {
       this.portfolio = data;
-      console.log(data);
     });
   }
 
